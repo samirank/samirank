@@ -24,6 +24,10 @@ section#header {
   .header-text {
     margin-top: 20%;
   }
+
+  footer span.left {
+    float: right !important;
+  }
 }
 .header-name {
   font-family: 'Roboto', sans-serif;
