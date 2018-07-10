@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
 html, body {
   height: 100%;
   margin: 0px;
+}
+section#header {
+  height: 100%;
+  overflow: hidden;
 }
 .container {
   height: 100%;
 }
 blockquote {
   border-color: #42a5f5 ;
-}
-section#header {
-  min-height: 100%;
 }
 #social {
   position: absolute;
@@ -20,19 +22,12 @@ section#header {
 .header-text {
   margin-top: 25%;
 }
-@media (min-width: 768px) {
-  .header-text {
-    margin-top: 20%;
-  }
 
-  footer span.left {
-    float: right !important;
-  }
-}
 .header-name {
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Lato', sans-serif;
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 900;
   letter-spacing: 4px;
 }
 nav {
@@ -43,9 +38,10 @@ nav.scrollUp {
 }
 .typed-cursor {
   padding-bottom: 0.5rem;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Lato', sans-serif;
   font-size: 2.3em;
-  font-weight: 500;
+  font-weight: 900;
   opacity: 1;
   animation: blink .7s infinite;
 }
@@ -59,5 +55,50 @@ nav.scrollUp {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-name {
+    font-size: 2.5em;
+  }
+
+  .typed-cursor {
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
+    padding-bottom: 0.5rem;
+    font-size: 3em;
+    font-weight: 400;
+  }
+
+  .header-text {
+    margin-top: 20%;
+  }
+
+  footer div.text-left {
+    text-align: right !important;
+    margin-top: unset !important;
+  }
+
+  .background-svg-1 {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    left: -230px;
+    top: 15%;
+    background-image: url(../images/background-svg-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .background-svg-2 {
+    height: 460px;
+    width: 100%;
+    position: absolute;
+    left: 80%;
+    top: 15%;
+    background-image: url(../images/background-svg-2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
