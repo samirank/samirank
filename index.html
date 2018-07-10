@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Landing</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper white">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text text-darken-3"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="grey-text text-darken-3" href="sass.html">HOME</a></li>
+          <li><a class="grey-text text-darken-3" href="badges.html">ABOUT</a></li>
+          <li><a class="grey-text text-darken-3" href="collapsible.html">CONTACT</a></li>
+          <li><a class="grey-text text-darken-3" href="mobile.html">BLOG</a></li>
+        </ul>
+      </div>
+    </nav>  
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+  <section id="header" class="mt-4">
+    <div class="container">
+      <div class="row header-text">
+        <div class="col col-12 offset-md-2 col-md-8 text-center">
+          <span class="header-name pb-2" id="headerName"></span>
+          <p class="header-about mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus temporibus ex quibusdam iste neque provident vel? Perspiciatis architecto Lorem ipsum</p>
+          <div class="row pb-2 mt-5">
+            <div class="col">
+              <button class="btn yellow darken-3 pulse m-2">Hire me</button>
+              <button class="btn grey darken-3 m-2">View portfolio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="social" class="mb-0 align-bottom">
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row mt-4 mb-4">
+          <div class="col col-2 text-center">
+            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-github"></i></a>
+          </div>
+          <div class="col col-2 text-center">
+            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-instagram"></i></a>
+          </div>
+          <div class="col col-2 text-center">
+            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-behance"></i></a>
+          </div>
+          <div class="col col-2 text-center">
+            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-linkedin"></i></a>
+          </div>
+          <div class="col col-2 text-center">
+            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-facebook"></i></a>
+          </div>
+          <div class="col col-2 text-center">
+            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </section>
+<!-- <section id="portfolio">
+  <div class="container">
+  </div>
+</section> -->
+<section id="footer">
+  <footer class="white page-footer">
+    <div class="footer-copyright">
+      <div class="container grey-text text-darken-1">
+        © 2018 Samiran Kakoty
+        <span class="right">Hosted on: <a class="grey-text text-darken-4" href="https://affiliates.hostsoch.in/idevaffiliate.php?id=164_1">Hostsoch</a></span>
+      </div>
+    </div>
+  </footer>
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
+
+
+
+<script src="js/index.js"></script>
+<script src="js/typed.js"></script>
+<script>
+  var typed = new Typed('#headerName', {
+    strings: [" ","^500 Hello,^1300", "I am^1300", "SAMIRAN ^1000 KAKOTY"],
+    typeSpeed: 120
+  });
+</script>
+
+
+</body>
+
+</html>
