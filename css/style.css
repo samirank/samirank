@@ -18,7 +18,12 @@ section#header {
   bottom: 0;
 }
 .header-text {
-  margin-top: 20%;
+  margin-top: 25%;
+}
+@media (min-width: 768px) {
+  .header-text {
+    margin-top: 20%;
+  }
 }
 .header-name {
   font-family: 'Roboto', sans-serif;
