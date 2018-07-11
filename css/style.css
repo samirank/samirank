@@ -5,26 +5,33 @@ html, body {
   margin: 0px;
 }
 section#header {
+    position: relative;
+    height: 100%;
+    margin-top: -64px;
+    overflow: hidden;
+}
+section#header .container {
   position: relative;
   height: 100%;
-  overflow: hidden;
 }
-.container {
-  height: 79%;
+div#social .container {
+  position: relative;
+  height: unset;
 }
 blockquote {
   border-color: #42a5f5 ;
 }
 #social {
-  position: relative;
+  position: absolute;
+  /*height: 20%;*/
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
 }
 .header-text {
   position: absolute;
   width: 100%;
   left: 0;
-  margin-top: 25%;
+  /*margin-top: 25%;*/
 }
 
 .header-name {
@@ -76,7 +83,8 @@ nav.scrollUp {
   }
 
   .header-text {
-    margin-top: 10%;
+    /*margin-top: 10%;*/
+    top: 25%;
   }
 
   footer div.text-left {
@@ -89,7 +97,7 @@ nav.scrollUp {
     width: 100%;
     position: absolute;
     left: -250px;
-    top: 3%;
+    top: 15%;
     background-image: url(../images/background-svg-1.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -100,7 +108,7 @@ nav.scrollUp {
     width: 100%;
     position: absolute;
     left: 80%;
-    top: 3%;
+    top: 15%;
     background-image: url(../images/background-svg-2.svg);
     background-size: contain;
     background-repeat: no-repeat;
