@@ -6,9 +6,14 @@ html, body {
   margin: 0px;
 }
 
+section#about, section#portfolio {
+  min-height: 90%;
+}
+
 p {
-  color: #757575;
+  /*color: #757575;*/
   font-size: 1.1em;
+  font-weight: 200;
   line-height: 1.5em;
   text-align: justify;
 }
@@ -52,6 +57,7 @@ blockquote {
 
 .header-text p {
   text-align: unset;
+  font-weight: unset;
   font-size: 1.2em;
 }
 
@@ -155,7 +161,6 @@ h2 {
   }
 
   p {
-    color: #757575;
     font-size: 1.4em;
     line-height: 1.6em;
     text-align: left;

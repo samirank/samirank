@@ -12,6 +12,9 @@
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css'>
 
+  <!-- <link rel="stylesheet" type="text/css" href="css/elasticgrid/demo.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/elasticgrid/elastic_grid.min.css" />
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -49,8 +52,8 @@
           <p class="header-about mt-3 grey-text text-darken-1">A full-stack developer, designer,<br> based in Guwahati, India.</p>
           <div class="row pb-2 mb-3 mt-5 header-buttons">
             <div class="col">
-              <button class="btn yellow darken-3 pulse m-2">Hire me</button>
-              <button class="btn grey darken-3 m-2">View portfolio</button>
+              <button class="btn yellow darken-3 pulse m-2 waves-effect waves-light">Hire me</button>
+              <button class="btn grey darken-3 m-2 waves-effect waves-light">View portfolio</button>
             </div>
           </div>
         </div>
@@ -87,54 +90,112 @@
   </section>
 
   <!-- About section -->
-  <section class="mt-4 mb" id="about">
+  <section class="mt-4 mb valign-wrapper" id="about">
     <div class="container">
       <div class="row">
         <div class="col">
-          <!-- <blockquote> -->
-            <h2 class="pt-4 pb-4">About me.</h2>
-          <!-- </blockquote> -->
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quibusdam, iste deserunt vero explicabo impedit nobis eveniet veritatis in reiciendis sit vel labore, quaerat molestiae, distinctio omnis similique culpa adipisci?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aliquam placeat iusto, culpa dolorum, asperiores ipsam, quia aut sequi odio aspernatur. Nihil ducimus, blanditiis, voluptatibus iste distinctio incidunt aspernatur ex.</p>
+          <h2 class="pt-4 pb-4">About me.</h2>
+          <p>I am a <span id="age"></span> years old developer from Guwahati, Assam (India)</p>
+        </div>
+      </div>
+      <div class="row mt-4 pt-4">
+        <div class="col">
+          <button class="btn grey darken-3 waves-effect waves-light"><i class="fa fa-file-text-o mr-3"></i>Resume</button>
         </div>
       </div>
     </div>
   </section>
 
-<!-- <section id="portfolio">
-  <div class="container">
-  </div>
-</section> -->
 
-<!-- Footer section -->
-<section id="footer">
-  <footer class="white page-footer">
-    <div class="footer-copyright">
-      <div class="container grey-text text-darken-1 pt-3">
-        <div class="row">
-          <div class="col col-12 col-md-6">
-            Made with <i class="fa fa-heart red-text"></i> in Guwahati, India
-          </div>
-          <div class="col col-12 col-md-6 text-left mt-3">
-            Hosted on: 
-            <a class="grey-text text-darken-4" href="https://affiliates.hostsoch.in/idevaffiliate.php?id=164_1">Hostsoch.in</a>
-          </div>
+  <div class="divider"> </div>
+
+  <!-- Portfolio section -->
+  <section class="mt-4 mb valign-wrapper" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="pt-4 pb-4">Portfolio.</h2>
+        </div>  
+      </div>
+
+      <!-- portfolio gallery -->
+      <div id="photogrid"></div>
+      <div class="row">
+        <div class="col">
+          <div></div>
         </div>
       </div>
     </div>
-  </footer>
-</section>
+  </section>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
+  <!-- Footer section -->
+  <section id="footer">
+    <footer class="white page-footer">
+      <div class="footer-copyright">
+        <div class="container grey-text text-darken-1 pt-3">
+          <div class="row">
+            <div class="col col-12 col-md-6">
+              Made with <i class="fa fa-heart red-text"></i> in Guwahati, India
+            </div>
+            <div class="col col-12 col-md-6 text-left mt-3">
+              Hosted on: 
+              <a class="grey-text text-darken-4" href="https://affiliates.hostsoch.in/idevaffiliate.php?id=164_1">Hostsoch.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
 
-<script src="js/index.js"></script>
-<script src="js/typed.js"></script>
-<script>
-  var typed = new Typed('#headerName', {
-    strings: [" ","^500 Hello,^1300", "I am^1300", "Samiran ^1000 Kakoty"],
-    typeSpeed: 120
-  });
-</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
+  
+  <script src="js/elasticgrid/modernizr.custom.js"></script>
+  <script src="js/elasticgrid/classie.js"></script>
+  <!--- uncompress-->
+
+  <script type="text/javascript" src="js/elasticgrid/jquery.elastislide.js"></script>
+  <script type="text/javascript" src="js/elasticgrid/jquery.hoverdir.js"></script>
+  <script type="text/javascript" src="js/elasticgrid/elastic_grid.js"></script>
+
+  <!-- compress version -->
+
+  <script src="js/index.js"></script>
+  <script src="js/typed.js"></script>
+  <script>
+    var typed = new Typed('#headerName', {
+      strings: [" ","^500 Hello,^1300", "I am^1300", "Samiran ^1000 Kakoty"],
+      typeSpeed: 120
+    });
+
+    $(function(){
+      $("#photogrid").elastic_grid({
+        'showAllText' : 'All',
+            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 500,
+            'items' :
+            [
+            {
+              'title'         : 'Azuki bean',
+              'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+              'thumbnail'     : ['http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200'],
+              'large'         : ['http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500'],
+              'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+              'button_list'   :
+              [
+              { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+              { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
+              ],
+              'tags'          : ['Self Portrait']
+            }
+            ]
+          });
+    });
+  </script>
 
 </body>
 
