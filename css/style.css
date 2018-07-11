@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
 /*@import url('https://fonts.googleapis.com/css?family=Lato:900');*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800,900');
 html, body {
   height: 100%;
   margin: 0px;
 }
-body {
-  /*overflow: hidden;*/
+
+p {
+  color: #757575;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: justify;
 }
 section#header {
   position: relative;
@@ -25,12 +29,12 @@ div#social .container {
   height: unset;
 }
 blockquote {
-    /* border-style: solid; */
-    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B066FE), to(#63E2FF)) 1 100%;
-    -webkit-border-image: -webkit-linear-gradient(#B066FE, #63E2FF) 1 100%;
-    -moz-border-image: -moz-linear-gradient(#B066FE, #63E2FF) 1 100%;
-    -o-border-image: -o-linear-gradient(#B066FE, #63E2FF) 1 100%;
-    border-image: linear-gradient(to bottom, #B066FE, #63E2FF) 1 100%;
+  /* border-style: solid; */
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B066FE), to(#63E2FF)) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(#B066FE, #63E2FF) 1 100%;
+  -moz-border-image: -moz-linear-gradient(#B066FE, #63E2FF) 1 100%;
+  -o-border-image: -o-linear-gradient(#B066FE, #63E2FF) 1 100%;
+  border-image: linear-gradient(to bottom, #B066FE, #63E2FF) 1 100%;
 }
 #social {
   position: relative;
@@ -47,6 +51,7 @@ blockquote {
 }
 
 .header-text p {
+  text-align: unset;
   font-size: 1.2em;
 }
 
@@ -75,7 +80,9 @@ nav.scrollUp {
 }
 
 h2 {
+  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 @keyframes blink {
@@ -140,5 +147,17 @@ h2 {
   }
   .header-buttons {
     margin-top: 70px !important;
+  }
+
+  h2 {
+    font-size: 3.3em;
+    font-weight: 900;
+  }
+
+  p {
+    color: #757575;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    text-align: left;
   }
 }
