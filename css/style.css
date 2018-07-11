@@ -22,10 +22,10 @@ blockquote {
   border-color: #42a5f5 ;
 }
 #social {
-  position: absolute;
+  position: relative;
   /*height: 20%;*/
   width: 100%;
-  bottom: 0px;
+  bottom: 64px;
 }
 .header-text {
   position: absolute;
