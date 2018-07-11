@@ -9,12 +9,12 @@ body {
   /*overflow: hidden;*/
 }
 section#header {
-    position: relative;
-    height: 100%;
-    min-height: 500px;
-    margin-top: -64px;
-    padding-bottom: 78px;
-    overflow: hidden;
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  margin-top: -64px;
+  padding-bottom: 78px;
+  overflow: hidden;
 }
 section#header .container {
   position: relative;
@@ -25,7 +25,12 @@ div#social .container {
   height: unset;
 }
 blockquote {
-  border-color: #42a5f5 ;
+    /* border-style: solid; */
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B066FE), to(#63E2FF)) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(#B066FE, #63E2FF) 1 100%;
+    -moz-border-image: -moz-linear-gradient(#B066FE, #63E2FF) 1 100%;
+    -o-border-image: -o-linear-gradient(#B066FE, #63E2FF) 1 100%;
+    border-image: linear-gradient(to bottom, #B066FE, #63E2FF) 1 100%;
 }
 #social {
   position: relative;
@@ -41,11 +46,15 @@ blockquote {
   /*margin-top: 25%;*/
 }
 
+.header-text p {
+  font-size: 1.2em;
+}
+
 .header-name {
   /*font-family: 'Roboto', sans-serif;*/
   /*font-family: 'Lato', sans-serif;*/
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
+  font-size: 2.8em;
   font-weight: 900;
   letter-spacing: 4px;
 }
@@ -59,10 +68,14 @@ nav.scrollUp {
   padding-bottom: 0.5rem;
   /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Lato', sans-serif;
-  font-size: 2.3em;
+  font-size: 2.7em;
   font-weight: 900;
   opacity: 1;
   animation: blink .7s infinite;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes blink {
@@ -85,6 +98,7 @@ nav.scrollUp {
   .typed-cursor {
     font-family: 'Roboto', sans-serif;
     /*font-family: 'Lato', sans-serif;*/
+    /*font-family: 'Montserrat', sans-serif;*/
     padding-bottom: 1.5rem;
     font-size: 4em;
     font-weight: 400;
