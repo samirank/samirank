@@ -149,16 +149,6 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
-  
-  <script src="js/elasticgrid/modernizr.custom.js"></script>
-  <script src="js/elasticgrid/classie.js"></script>
-  <!--- uncompress-->
-
-  <script type="text/javascript" src="js/elasticgrid/jquery.elastislide.js"></script>
-  <script type="text/javascript" src="js/elasticgrid/jquery.hoverdir.js"></script>
-  <script type="text/javascript" src="js/elasticgrid/elastic_grid.js"></script>
-
-  <!-- compress version -->
 
   <script src="js/index.js"></script>
   <script src="js/typed.js"></script>
@@ -167,7 +157,21 @@
       strings: [" ","^500 Hello,^1300", "I am^1300", "Samiran ^1000 Kakoty"],
       typeSpeed: 120
     });
+  </script>
 
+
+
+  <!-- Elasticgrid -->
+  <!-- compress version -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/elasticgrid/modernizr.custom.js"></script>
+  <script src="js/elasticgrid/classie.js"></script>
+  <!--- uncompress-->
+  <script type="text/javascript" src="js/elasticgrid/jquery.elastislide.js"></script>
+  <script type="text/javascript" src="js/elasticgrid/jquery.hoverdir.js"></script>
+  <script type="text/javascript" src="js/elasticgrid/elastic_grid.js"></script>
+
+  <script>
     $(function(){
       $("#photogrid").elastic_grid({
         'showAllText' : 'All',
@@ -190,13 +194,25 @@
               { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
               { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
               ],
-              'tags'          : ['Self Portrait']
+              'tags'          : ['PHP']
+            },
+            {
+              'title'         : 'Azuki bean',
+              'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+              'thumbnail'     : ['http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200'],
+              'large'         : ['http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500'],
+              'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+              'button_list'   :
+              [
+              { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+              { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
+              ],
+              'tags'          : ['HTML']
             }
             ]
           });
     });
   </script>
-
 </body>
 
 </html>

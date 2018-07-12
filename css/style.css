@@ -70,10 +70,16 @@ blockquote {
   letter-spacing: 4px;
 }
 nav {
+  background-color: #fff;
+  color: #424242;
   transition: all 0.5s;
 }
 nav.scrollUp {
   transform: translateY(-80px);
+}
+nav#porfolio-nav {
+    transform: unset;
+    box-shadow: unset;
 }
 .typed-cursor {
   padding-bottom: 0.5rem;
@@ -90,7 +96,9 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
-
+figure {
+  margin: unset;
+}
 @keyframes blink {
   0% {
     opacity: 1;
@@ -165,4 +173,8 @@ h2 {
     line-height: 1.6em;
     text-align: left;
   }
+}
+
+.wagwep-container ul#portfolio-filter {
+  padding: unset;
 }
