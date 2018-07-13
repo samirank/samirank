@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Portfolio Landing</title>
-  
-  
+
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css'>
-
+  <!-- <link rel="stylesheet" type="text/css" href="css/elasticgrid/elastic_grid.min.css" /> -->
   <!-- <link rel="stylesheet" type="text/css" href="css/elasticgrid/demo.css" /> -->
-  <link rel="stylesheet" type="text/css" href="css/elasticgrid/elastic_grid.min.css" />
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet prefetch">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper white">
+    <nav class="z-depth-0">
+      <div class="nav-wrapper white ">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text text-darken-3"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a class="grey-text text-darken-3" href="index.html">HOME</a></li>
@@ -31,7 +30,8 @@
           <li><a class="grey-text text-darken-3" href="blog.html">BLOG</a></li>
         </ul>
       </div>
-    </nav>  
+      <div class="divider"></div>
+    </nav>
   </div>
 
   <ul class="sidenav" id="mobile-demo">
@@ -49,170 +49,290 @@
       <div class="row header-text">
         <div class="col col-12 offset-md-2 col-md-8 text-center">
           <span class="header-name pb-2 grey-text text-darken-4" id="headerName"></span>
-          <p class="header-about mt-3 grey-text text-darken-1">A full-stack developer, designer,<br> based in Guwahati, India.</p>
-          <div class="row pb-2 mb-3 mt-5 header-buttons">
-            <div class="col">
-              <button class="btn yellow darken-3 pulse m-2 waves-effect waves-light">Hire me</button>
-              <button class="btn grey darken-3 m-2 waves-effect waves-light">View portfolio</button>
+          <p class="header-about mt-3 grey-text text-darken-1">A full-stack developer, designer,
+            <br> based in Guwahati, India.</p>
+            <div class="row pb-2 mb-3 mt-5 header-buttons">
+              <div class="col">
+                <button class="btn yellow darken-3 pulse m-2 waves-effect waves-light">Hire me</button>
+                <button class="btn grey darken-3 m-2 waves-effect waves-light">View portfolio</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Social links -->
-    <div id="social" class="mb-0 align-bottom white">
-      <div class="divider"></div>
+      <!-- Social links -->
+      <div id="social" class="mb-0 align-bottom white">
+        <div class="divider"></div>
+        <div class="container">
+          <div class="row mt-4 mb-4">
+            <div class="col col-2 text-center">
+              <a class="p-2 grey-text text-darken-2" href="https://www.github.com/samirank"><i class="fa fa-2x fa-github"></i></a>
+            </div>
+            <div class="col col-2 text-center">
+              <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-instagram"></i></a>
+            </div>
+            <div class="col col-2 text-center">
+              <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-behance"></i></a>
+            </div>
+            <div class="col col-2 text-center">
+              <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-linkedin"></i></a>
+            </div>
+            <div class="col col-2 text-center">
+              <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-facebook"></i></a>
+            </div>
+            <div class="col col-2 text-center">
+              <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="mt-4 mb-4 pt-4 pb-4" id="about">
       <div class="container">
-        <div class="row mt-4 mb-4">
-          <div class="col col-2 text-center">
-            <a class="p-2 grey-text text-darken-2" href="https://www.github.com/samirank"><i class="fa fa-2x fa-github"></i></a>
-          </div>
-          <div class="col col-2 text-center">
-            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-instagram"></i></a>
-          </div>
-          <div class="col col-2 text-center">
-            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-behance"></i></a>
-          </div>
-          <div class="col col-2 text-center">
-            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-linkedin"></i></a>
-          </div>
-          <div class="col col-2 text-center">
-            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-facebook"></i></a>
-          </div>
-          <div class="col col-2 text-center">
-            <a class="p-2 grey-text text-darken-2" href=""><i class="fa fa-2x fa-twitter"></i></a>
+        <div class="row">
+          <div class="col">
+            <h2 class="pt-4 pb-4">About me.</h2>
           </div>
         </div>
       </div>
-      <div class="divider"></div>
-    </div>
-  </section>
-
-  <!-- About section -->
-  <section class="mt-4 mb valign-wrapper" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="pt-4 pb-4">About me.</h2>
-          <p>I am a <span id="age"></span> years old developer from Guwahati, Assam (India)</p>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>I am a <span id="age"></span> years old developer from Guwahati, Assam (India)</p>
+          </div>
+        </div>
+        <div class="row mt-4 pt-4">
+          <div class="col">
+            <button class="btn waves-effect waves-light"><i class="fa fa-file-text-o mr-3"></i>Resume</button>
+          </div>
         </div>
       </div>
-      <div class="row mt-4 pt-4">
-        <div class="col">
-          <button class="btn grey darken-3 waves-effect waves-light"><i class="fa fa-file-text-o mr-3"></i>Resume</button>
+    </section>
+
+    <div class="divider"> </div>
+
+    <!-- Portfolio section -->
+    <section class="mt-4 mb-4 pt-4 pb-4" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="pt-4 pb-4">Portfolio.</h2>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="container">
 
-
-  <div class="divider"> </div>
-
-  <!-- Portfolio section -->
-  <section class="mt-4 mb valign-wrapper" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="pt-4 pb-4">Portfolio.</h2>
-        </div>  
-      </div>
-
-      <!-- portfolio gallery -->
-      <div id="photogrid"></div>
-      <div class="row">
-        <div class="col">
-          <div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer section -->
-  <section id="footer">
-    <footer class="white page-footer">
-      <div class="footer-copyright">
-        <div class="container grey-text text-darken-1 pt-3">
-          <div class="row">
-            <div class="col col-12 col-md-6">
-              Made with <i class="fa fa-heart red-text"></i> in Guwahati, India
-            </div>
-            <div class="col col-12 col-md-6 text-left mt-3">
-              Hosted on: 
-              <a class="grey-text text-darken-4" href="https://affiliates.hostsoch.in/idevaffiliate.php?id=164_1">Hostsoch.in</a>
+        <!-- portfolio gallery -->
+        <!-- <div id="photogrid"></div> -->
+        <div class="row">
+          <div class="col col-md-5">
+            <div class="card hoverable sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://via.placeholder.com/320x180" alt="card-photo">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Card Title
+                  <i class="material-icons right">more_vert</i>
+                </span>
+              </div>
+              <div class="card-action">
+                <a href="" class="grey-text"><i class="fa fa-github pr-2"></i>Github</a>
+                <a href="" class="grey-text right text-right mr-0"><i class="fa fa-link pr-2"></i>View</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Card Title
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
             </div>
           </div>
+
+          <div class="col col-md-5 offset-md-2">
+            <div class="card hoverable sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://via.placeholder.com/320x180" alt="card-photo">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Card Title<i class="material-icons right">more_vert</i>
+                </span>
+              </div>
+              <div class="card-action">
+                <a href="" class="grey-text"><i class="fa fa-github pr-2"></i>Github</a>
+                <a href="" class="grey-text right text-right mr-0"><i class="fa fa-link pr-2"></i>View</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Card Title
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row end -->
+        </div>
+
+        <div class="row">
+          <div class="col col-md-5">
+            <div class="card hoverable sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://via.placeholder.com/320x180" alt="card-photo">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Card Title
+                  <i class="material-icons right">more_vert</i>
+                </span>
+              </div>
+              <div class="card-action">
+                <a href="" class="grey-text"><i class="fa fa-github pr-2"></i>Github</a>
+                <a href="" class="grey-text right text-right mr-0"><i class="fa fa-link pr-2"></i>View</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Card Title
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-md-5 offset-md-2">
+            <div class="card hoverable sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://via.placeholder.com/320x180" alt="card-photo">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Card Title<i class="material-icons right">more_vert</i>
+                </span>
+              </div>
+              <div class="card-action">
+                <a href="" class="grey-text"><i class="fa fa-github pr-2"></i>Github</a>
+                <a href="" class="grey-text right text-right mr-0"><i class="fa fa-link pr-2"></i>View</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  Card Title
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row end -->
+        </div>
+        <!-- Container end -->
+      </div>
+    </section>
+    
+    <div class="divider"></div>
+
+    <section class="mt-4 mb-4 pt-4 pb-4" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Contact.</h2>
+          </div>
         </div>
       </div>
-    </footer>
-  </section>
+      <div class="container">
+        
+      </div>
+    </section>
+    <!-- Footer section -->
+    <section id="footer">
+      <footer class="white page-footer">
+        <div class="footer-copyright">
+          <div class="container grey-text text-darken-1 pt-3">
+            <div class="row">
+              <div class="col col-12 col-md-6">
+                Made with <i class="fa fa-heart red-text"></i> in Guwahati, India
+              </div>
+              <div class="col col-12 col-md-6 text-left mt-3">
+                Hosted on:
+                <a class="grey-text text-darken-4" href="https://affiliates.hostsoch.in/idevaffiliate.php?id=164_1">Hostsoch.in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+        // Typed
+        var typed = new Typed('#headerName', {
+          strings: [" ", "^500 Hello,^1300", "I am^1300", "Samiran ^1000 Kakoty"],
+          typeSpeed: 120
+        });
+      </script>
 
-  <script src="js/index.js"></script>
-  <script src="js/typed.js"></script>
-  <script>
-    var typed = new Typed('#headerName', {
-      strings: [" ","^500 Hello,^1300", "I am^1300", "Samiran ^1000 Kakoty"],
-      typeSpeed: 120
-    });
-  </script>
+      <!-- Elasticgrid -->
+      <!-- compress version -->
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+      <!-- <script src="js/elasticgrid/modernizr.custom.js"></script> -->
+      <!-- <script src="js/elasticgrid/classie.js"></script> -->
+      <!--- uncompress-->
+      <!-- <script type="text/javascript" src="js/elasticgrid/jquery.elastislide.js"></script> -->
+      <!-- <script type="text/javascript" src="js/elasticgrid/jquery.hoverdir.js"></script> -->
+      <!-- <script type="text/javascript" src="js/elasticgrid/elastic_grid.js"></script> -->
 
+      <script>
+        // $(function(){
+        //   $("#photogrid").elastic_grid({
+        //     'showAllText' : 'All',
+        //         'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+        //         'hoverDirection': false,
+        //         'expandingSpeed': 500,
+        //         'expandingHeight': 500,
+        //         'items' :
+        //         [
+        //         {
+        //           'title'         : 'Azuki bean',
+        //           'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+        //           'thumbnail'     : ['http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200'],
+        //           'large'         : ['http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500'],
+        //           'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+        //           'button_list'   :
+        //           [
+        //           { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+        //           { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
+        //           ],
+        //           'tags'          : ['PHP']
+        //         },
+        //         {
+        //           'title'         : 'Azuki bean',
+        //           'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+        //           'thumbnail'     : ['http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200'],
+        //           'large'         : ['http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500'],
+        //           'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+        //           'button_list'   :
+        //           [
+        //           { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
+        //           { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
+        //           ],
+        //           'tags'          : ['HTML']
+        //         }
+        //         ]
+        //       });
+        // });
+      </script>
+    </body>
 
-
-  <!-- Elasticgrid -->
-  <!-- compress version -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/elasticgrid/modernizr.custom.js"></script>
-  <script src="js/elasticgrid/classie.js"></script>
-  <!--- uncompress-->
-  <script type="text/javascript" src="js/elasticgrid/jquery.elastislide.js"></script>
-  <script type="text/javascript" src="js/elasticgrid/jquery.hoverdir.js"></script>
-  <script type="text/javascript" src="js/elasticgrid/elastic_grid.js"></script>
-
-  <script>
-    $(function(){
-      $("#photogrid").elastic_grid({
-        'showAllText' : 'All',
-            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
-            'hoverDirection': true,
-            'hoverDelay': 0,
-            'hoverInverse': false,
-            'expandingSpeed': 500,
-            'expandingHeight': 500,
-            'items' :
-            [
-            {
-              'title'         : 'Azuki bean',
-              'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-              'thumbnail'     : ['http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200'],
-              'large'         : ['http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500'],
-              'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
-              'button_list'   :
-              [
-              { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-              { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
-              ],
-              'tags'          : ['PHP']
-            },
-            {
-              'title'         : 'Azuki bean',
-              'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-              'thumbnail'     : ['http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200', 'http://via.placeholder.com/200x200'],
-              'large'         : ['http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500', 'http://via.placeholder.com/500x500'],
-              'img_title'     : ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
-              'button_list'   :
-              [
-              { 'title':'Demo', 'url' : 'http://porfolio.bonchen.net/', 'new_window' : true },
-              { 'title':'Download', 'url':'http://porfolio.bonchen.net/', 'new_window' : false}
-              ],
-              'tags'          : ['HTML']
-            }
-            ]
-          });
-    });
-  </script>
-</body>
-
-</html>
+    </html>

@@ -6,6 +6,7 @@ $(document).ready(function(){
   });
 });
 
+// Autohide nav
 $(document).ready(function () {
 
   'use strict';
@@ -29,7 +30,12 @@ $(document).ready(function () {
   
 });
 
+// Age
 dob = new Date('1994-01-17');
 var today = new Date();
 var age = Math.floor((today-dob) / (365.25 * 24 * 60 * 60 * 1000));
 $('#age').html(age);
+
+
+// Initialize AOS
+AOS.init();

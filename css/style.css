@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
 /*@import url('https://fonts.googleapis.com/css?family=Lato:900');*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:800,900');
+:root {
+--theme-color-1: #63E2FF;
+--theme-color-2: #B066FE;
+}
 html, body {
   height: 100%;
   margin: 0px;
 }
 
-section#about, section#portfolio {
-  min-height: 90%;
+section#about, section#portfolio, section#contact {
+  min-height: 95%;
 }
 
 p {
@@ -16,6 +20,9 @@ p {
   font-weight: 200;
   line-height: 1.5em;
   text-align: justify;
+}
+section#portfolio p {
+  font-size: 1rem;
 }
 section#header {
   position: relative;
@@ -177,4 +184,20 @@ figure {
 
 .wagwep-container ul#portfolio-filter {
   padding: unset;
+}
+
+.btn {
+  background-color: var(--theme-color-2);
+}
+
+
+/*Cards*/
+.card .card-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hoverable:hover {
+    -webkit-box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
 }
